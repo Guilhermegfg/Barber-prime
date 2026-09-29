@@ -1,0 +1,38 @@
+:root{--tech:'Space Grotesk',Arial,sans-serif;--deep:#050506;--panel:#101012}
+
+/* Header: bloco preto contínuo, sem abas claras ou cantos soltos */
+.site-header{height:82px;background:#050506;border-bottom:1px solid rgba(200,155,60,.32);box-shadow:0 12px 36px rgba(0,0,0,.35);gap:24px}
+.brand{font-family:var(--tech);font-weight:600;letter-spacing:.18em}
+.brand-mark{width:42px;height:42px;transform:none;background:#050506;border:1px solid var(--gold);font-family:var(--tech);font-style:normal;position:relative;box-shadow:inset 0 0 0 4px #050506,0 0 0 1px rgba(200,155,60,.16),0 0 24px rgba(200,155,60,.08)}
+.brand-mark:after{content:'';position:absolute;width:5px;height:5px;right:-1px;top:-1px;background:var(--gold)}
+.site-header nav{height:100%;align-items:center;gap:2px;background:#050506}
+.site-header nav a{height:42px;display:flex;align-items:center;padding:0 16px;background:#050506;border:1px solid transparent;font-family:var(--tech);font-size:.78rem;letter-spacing:.02em;color:#bdbab4}
+.site-header nav a:hover{background:#111113;border-color:rgba(200,155,60,.38);color:#fff}
+.site-header .header-cta{font-family:var(--tech);background:var(--gold);clip-path:polygon(0 0,calc(100% - 11px) 0,100% 11px,100% 100%,11px 100%,0 calc(100% - 11px));border:0}
+
+/* Direção visual mais tecnológica, mantendo o luxo da marca */
+.hero:after{content:'';position:absolute;inset:82px 0 0;z-index:1;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:64px 64px;mask-image:linear-gradient(90deg,#000,transparent 62%)}
+.hero-content{z-index:3}
+.hero h1{font-family:var(--tech);font-weight:600;letter-spacing:-.065em;text-transform:uppercase;font-size:clamp(3.65rem,6.4vw,6rem)}
+.hero h1 em{font-family:var(--serif);text-transform:none;letter-spacing:-.045em;text-shadow:0 0 30px rgba(200,155,60,.16)}
+.eyebrow{font-family:var(--tech);letter-spacing:.22em}
+.button{font-family:var(--tech);clip-path:polygon(0 0,calc(100% - 11px) 0,100% 11px,100% 100%,11px 100%,0 calc(100% - 11px));border:0;letter-spacing:.01em}
+.button-outline{border:1px solid var(--gold);background:transparent}
+.hero-hours{font-family:var(--tech);clip-path:polygon(14px 0,100% 0,100% 100%,0 100%,0 14px)}
+.trust-strip{width:100%;max-width:none;margin:-1px 0 0;background:#0b0b0c;border:0;box-shadow:0 22px 55px rgba(0,0,0,.12)}
+.trust-strip>div{position:relative;background:#0b0b0c}
+.trust-strip>div:before{content:'';position:absolute;left:0;top:0;width:18px;height:1px;background:var(--gold)}
+.section h2,.final-cta h2{letter-spacing:-.055em}
+.service-list article{position:relative}
+.service-list article:before{content:'';position:absolute;left:0;top:50%;width:2px;height:0;background:var(--gold);transition:.25s}
+.service-list article:hover:before,.service-list article.featured:before{height:100%;top:0}
+.service-list a{background:#0b0b0c;border-color:rgba(200,155,60,.45);color:var(--gold)}
+.team{background-color:#070708;background-image:linear-gradient(rgba(255,255,255,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.022) 1px,transparent 1px);background-size:72px 72px}
+.team-visual img,.gallery-image img{clip-path:polygon(0 0,calc(100% - 22px) 0,100% 22px,100% 100%,22px 100%,0 calc(100% - 22px))}
+.review-grid blockquote{border-color:rgba(200,155,60,.18);background:linear-gradient(145deg,#171719,#0f0f11)}
+.map-card{border:1px solid rgba(200,155,60,.45);box-shadow:18px 18px 0 #0b0b0c,0 24px 60px rgba(0,0,0,.16)}
+.final-cta{background-image:linear-gradient(rgba(255,255,255,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.022) 1px,transparent 1px);background-size:72px 72px}
+.floating-whatsapp{border-radius:0;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px));font-family:var(--tech)}
+
+@media(max-width:900px){.site-header{height:72px}.menu-toggle{background:#050506;border-radius:0}.site-header.nav-open nav{top:72px;background:#050506;border-bottom:1px solid rgba(200,155,60,.32);padding:12px}.site-header.nav-open nav a{width:100%;background:#050506;border-bottom-color:rgba(255,255,255,.08)}.hero:after{inset:72px 0 0}}
+@media(max-width:620px){.brand-mark{width:38px;height:38px}.hero h1{font-size:3.35rem}.map-card{box-shadow:10px 10px 0 #0b0b0c}.button{clip-path:polygon(0 0,calc(100% - 9px) 0,100% 9px,100% 100%,9px 100%,0 calc(100% - 9px))}}
